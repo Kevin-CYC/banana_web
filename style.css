@@ -1,0 +1,182 @@
+@chartest "UTF-8";
+
+/*共通部分
+*/
+html{
+    font-size: 100%;
+    font-family: cursive;
+}
+body{
+    font-family:"Noto Serif TC",sans-self;
+    line-height:1.7;
+}
+/*
+取消a標籤的預設下底線
+*/
+
+a{
+    text-decoration: none;
+}
+
+/*
+消除nav前面的編號
+*/
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*
+共通部分結束
+*/
+
+
+
+/*
+header
+*/
+
+
+.logo{ 
+    width:210px;
+
+}
+
+.wrapper{
+    max-width:1200px;/*設定最大寬度*/
+    margin: 0 auto;/*設定置中對齊*/
+    padding: 0 4%;/*設定內側留白空間 配合窄畫面*/
+}
+
+.main-nav{
+    display: flex;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    font-family: "Yu Gothic Medium";  
+}
+
+.main-nav li{
+    margin-left: 36px;
+}
+
+/*
+更改link預設顏色
+*/
+.main-nav a{
+    color: #432;
+}
+
+/*
+指到link時顯示的顏色
+*/
+.main-nav a:hover{
+    color: #0bd;
+}
+
+
+.page-header{
+    display:flex;
+    justify-content: space-between;   /*justift設定對其形式 spacebetween會將最初和最後元素放在左右兩邊*/
+    border-radius: 15px; /* 添加圓角 */
+    /*background-color: #913304;*/
+}
+
+
+
+.home-content{
+    text-align: center;/*置中對齊*/
+    margin-top: 10%;/*上方留白*/
+    color: #f5a500;
+}
+
+.content p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+/*標題*/
+.page-title{
+    font-size: 5rem;
+    font-family:'Philosopher , serif';
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+/*按鈕*/
+.button{
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;/*圓角*/
+    padding: 18px 32px;
+}
+
+.button:hover{
+    background: #0090aa;
+}
+
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#home{
+    background-image: url(images/main-bg.jpg);
+    min-height: 100vh;
+
+}
+
+#home .page-title{
+    text-transform: none;
+}
+
+/*要update到共用檔案去意下內容有修改*/
+iframe{
+    width: 100%;
+}
+
+/*對手基板做優化*/
+/*當畫面小於600px使用*/
+@media (max-width: 768px){
+
+
+    .page-title{
+        font-size: 2.3rem;
+    }
+
+    /*Header*/
+    .main-nav li{
+        margin: 0 20px;
+
+    }
+
+    /*home*/
+    .home-content{
+        margin-top:20%;
+    }
+
+    .page-header{
+        flex-direction: column;/*將排版模式改為垂直*/
+        align-items:center;
+    }
+    .main-nav li{
+        width: 24vw;
+        border-radius: 15px;
+        background-color:#432;
+        text-align:center;
+    }
+    .main-nav{
+    font-size:1.1rem;
+    margin: 34px 35px 0 0;   
+    }
+    .main-nav a{
+        color:white;
+    }
+}

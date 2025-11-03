@@ -1,0 +1,235 @@
+<!doctype html> <!--html版本宣告-->
+<html lang ="zh-Hant-TW"> <!--使用html /html包裹檔案宣告檔案類型 並且說明此文件文繁體中文-->
+ 
+<head><!--head是用來描述網站資料標題、文件、使用的外部檔案等其內容不會顯示在網頁中-->
+
+    <meta charset="UTF-8"> <!--html原本就支援unicode只需宣告用utf-8儲存即可一定要做-->
+    
+    <link rel="icon" type="images/png" href="images/ICON.png" >
+    <!--css-->
+    <link rel="stylesheet" herf="https://unpkg.com/ress/dist/ress.min.css"><!--設定css預設值避免瀏覽器不同產生差異--> 
+    <link rel="stylesheet" herf ="https://fonts.googlemaps.com/css?family=Philosopher">   <!--google font set-->
+    <link rel="stylesheet" href="style.css?v=1.0.4"> <!--自己的css-->
+    <link rel="stylesheet" href="Activity_cs.css?v=1.0.5">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name = "噶瑪蘭香蕉絲手工藝文化創新、傳承、手作體驗、等最新消息"  content = "新社香蕉絲工坊LA LA BAN的最新活動 消息 及動態">
+    <title>Lala Ban-Activity</title>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v20.0" nonce="U6w5cbyY"></script>
+</head>   
+
+    <body>
+        <div id="Activity">
+            <header class="page-header wrapper">
+                <h1><a href="index.html"><img class=logo src="images/logo.jpg" alt="新社香蕉絲工坊"></a></h1>
+                <nav>
+                <ul class ="main-nav">
+                    <li><a href="About_us.html">About us</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Activity.html">Activity</a></li>
+                </ul>
+                </nav>
+            </header>
+
+            <div class="wrapper"><!--title-->
+                <h2 class="page-title">Activity</h2>
+            </div> 
+        </div>
+
+        <div class="wrapper">
+            <aside class="side-nav"> <!-- 新增右側導航欄 -->
+                <h3>快速連結</h3>
+                <ul>
+                    <li><a href="#handmade-experience">手作體驗</a></li>
+                    <li><a href="#fan-page">最新消息</a></li>
+                    <li><a href="#plan">旅遊行程規劃</a></li>
+                    <li><a href="#location">附近景點</a></li>
+                    <li><a href="#map">地理位置</a></li>
+                </ul>
+            </aside>
+
+            <!-- 手作體驗內容和照片 -->
+            <a name="handmade-experience"></a> <!-- 手作體驗錨點 -->
+            <style>
+                .experience {
+                    margin-bottom: 40px;
+                }
+            
+                .experience h1 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+            
+                .experience h3 {
+                    font-size: 18px;
+                    color: #666;
+                    margin-bottom: 20px;
+                }
+            
+                .experience ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+            
+                .experience li {
+                    font-size: 18px; /* 調整字體大小 */
+                    margin-bottom: 10px;
+                }
+            
+                .photo-container {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+            
+                .photo-item {
+                    flex: 0 0 48%; /* 控制兩張圖片的寬度 */
+                    text-align: center;
+                }
+            
+                .photo-item img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                }
+            
+                .photo-item figcaption {
+                    margin-top: 10px;
+                    font-size: 16px; /* 調整字體大小 */
+                    color: #444;
+                }
+            
+                @media (max-width: 768px) {
+                    .photo-container {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+            
+                    .photo-item {
+                        width: 80%;
+                        margin-bottom: 20px; /* 在小螢幕上增加底部間距 */
+                    }
+                }
+            </style>
+            
+            <div class="experience">
+                <h1>手作體驗</h1>
+                <h3>需先預約</h3>
+                <ul>
+                    <li>1. 二瑯皮編魚 - 200元/人，DIY 20分鐘</li>
+                    <li>2. 刮香蕉絲 - 200元/人，DIY 20分鐘</li>
+                    <li>3. 縫製貓頭鷹 - 250元/人，DIY 20分鐘</li>
+                    <li>4. 縫製幸福粽 - 250元/人，DIY 20分鐘</li>
+                </ul>
+            
+                <div class="photo-container">
+                    <figure class="photo-item">
+                        <img src="images/二榔皮編魚.jpg" alt="二榔皮編魚">
+                        <figcaption>二榔皮編魚</figcaption>
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="images/縫製貓頭鷹.jpg" alt="縫製貓頭鷹">
+                        <figcaption>縫製貓頭鷹</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            
+
+            <!-- 最新消息 -->
+            <div class="latest-news">
+                <a name="fan-page"></a>
+                <h1>最新消息</h1>
+                <div class="fb-page" data-href="https://www.facebook.com/LalaBanXinSheXiangJiaoSiGongFang/?locale=zh_TW" data-tabs="timeline" data-width="800" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/LalaBanXinSheXiangJiaoSiGongFang/?locale=zh_TW" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LalaBanXinSheXiangJiaoSiGongFang/?locale=zh_TW">Lala Ban 新社香蕉絲工坊</a></blockquote></div>
+                <a name="plan"></a>
+                <h1>旅遊行程規劃</h1>                
+                    <img src="images/旅遊行程表.png" alt="旅遊行程表" class="large-example-photo">
+            </div>
+
+            <!-- 地理位置和地圖 -->
+            <style>
+                .location-item {
+                    width: calc(50% - 20px); /* 讓兩個項目佔據一行的一半寬度，並減去間距 */
+                    display: inline-block;
+                    margin: 10px; /* 調整間距 */
+                    text-align: center;
+                    border: 1px solid #ccc; /* 添加邊框 */
+                    border-radius: 10px; /* 圓角邊框 */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+                    transition: transform 0.3s ease; /* 添加變換效果 */
+                }
+            
+                .location-item:hover {
+                    transform: translateY(-5px); /* 滑鼠懸停時向上移動 */
+                }
+            
+                .location-photo {
+                    max-width: 100%; /* 確保圖片不會超出父元素寬度 */
+                    height: auto;
+                    border-top-left-radius: 10px; /* 圖片上方左側圓角 */
+                    border-top-right-radius: 10px; /* 圖片上方右側圓角 */
+                }
+            
+                .location-title {
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+            
+                @media (max-width: 600px) {
+                    .location-item {
+                        width: calc(100% - 20px); /* 在小屏幕上讓項目佔據整個寬度，並減去間距 */
+                    }
+                }
+            </style>
+            
+            <a name="location"></a>
+            <div class="location">
+                <h1>附近景點</h1>
+                <div class="map-section-container">
+                    <div class="location-item">
+                        <img src="images/新社梯田.jpg" alt="新社梯田" class="location-photo">
+                        <h2 class="location-title">新社梯田</h2>
+                    </div>
+                    <div class="location-item">
+                        <img src="images/新社遺址.jpg" alt="新社遺址" class="location-photo">
+                        <h2 class="location-title">新社遺址</h2>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+            <div class="map-section">
+                <h1>地理位置</h1>
+                <a name="map"></a>
+                <div class="map-section-container">
+                    <figure class="phone">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.5425258011205!2d121.53705617511214!3d23.65654897873463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468ab622a16fcbb%3A0xd489250a4988e5f7!2z5paw56S-6aaZ6JWJ57Wy5bel5Z2K!5e0!3m2!1szh-TW!2stw!4v1717178677790!5m2!1szh-TW!2stw" width="540" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <figcaption>Google map</figcaption>
+                    </figure>
+
+                    <figure class="photo-item large-photo">
+                        <img src="images/地圖.jpg" alt="地圖">
+                        <figcaption>示意圖</figcaption>                      
+                    </figure>
+
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <footer>
+        <p><small>&copy;2024 新社香蕉絲工坊 Lala Ban</small></p>
+    </footer>
+
+
+</body>
+
+</html>

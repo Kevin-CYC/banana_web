@@ -1,0 +1,141 @@
+/*盡量不要去修改style.css他沒有和其他人的同步要修改改自己的css就好*/
+#Activity{
+
+}
+
+#Activity .page-title{/*這裡的設定只會影響到大標的字可以用來設定位置字體大小等*/
+
+
+}
+
+/*這邊是最下面框框的設定不用調*/
+footer{
+    background: #432;
+    color: #fff;
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p{
+    font-size: 0.875rem;
+}
+/*這邊是最下面框框的設定不用調*/
+
+
+.side-nav {
+    position: fixed;
+    right: 10px;
+    top: 150px;
+    background-color: #f4f4f4;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.side-nav h3 {
+    margin-top: 0;
+}
+
+
+.side-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -15px;
+}
+
+.side-nav ul li {
+    margin-bottom: 10px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #dc3914;
+}
+
+.side-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+figcaption {
+    font-size: 25px; /* 調整描述文字的字體大小 */
+    color: #555; /* 調整描述文字的顏色 */
+    margin-top: 8px; /* 調整描述文字與圖片之間的距離 */
+}
+.latest-news {
+    margin-top: 40px; /* 可選，用於調整上下邊距 */
+}
+
+.fb-page {
+    margin-top: 20px; /* 可選，用於調整上下邊距 */
+}
+
+.map-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* 根據需要調整間距 */
+}
+
+
+
+.map-section figure {
+    width: 45%; /* 根据需要調整寬度 */
+    text-align: center; /* 讓圖片和描述文字居中 */
+}
+
+.map-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* 可選，添加圆角效果 */
+}
+
+
+
+
+
+.travel-plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.large-example-photo {
+    width: 150%; /* 使圖片變大兩倍 */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* 將圖片置中 */
+}
+
+
+
+@media (max-width: 768px) {
+
+    .map-section-container {
+        display: flex;
+        flex-direction: column; 
+        gap:10px;       
+    }
+
+
+    .map-section figure {
+        width: 100%; /* 根据需要調整寬度 */
+        text-align: left; /* 讓圖片和描述文字居中 */
+    }
+
+    .map-section-container .photo-item{
+        margin-left: -3px;
+    }
+
+    .phone{
+        margin-left: 1px;
+    }
+
+
+    .side-nav{
+        display:none;
+    }
+    
+
+}
